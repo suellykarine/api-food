@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body class="dashboard-body">
+    <header class="dashboard-header">
+        <div class="logo-kenzie-food">
+            <span class="dashboard-kenzie">Kenzie</span>
+            <span class="dashboard-food">Food</span>
+        </div>
+        <div class="div-input-pesquisar-avatar-usuario">
+            <input type="text" name="" id="dashboard-pesquisa" class="dashboard-input-pesquisa" placeholder="Pesquisar por produto">
+            <img class="avatarUsuarioDashboard" src="../src/img/defaultAvatar.jpg" alt="">  
+            <div class="div-logout-dashboard">
+                <button class="button-logout-dashboard">logout</button>
+            </div>         
+        </div>
+        
+        
+    </header>
+
+    
+
+    <div id="modalAdicionarProduto" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close">&times;</button>
+                <h2>Cadastro de produto</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-body-p">Nome do produto</p>
+                <input type="text" id="modal-adicionar-produto-nome">
+                <p class="modal-body-p">Descrição</p>
+                <input type="text" id="modal-adicionar-produto-descricao">
+                <p class="modal-body-p">Categoria</p>
+                <div id="" class="modal-adicionar-produto-div-categorias">
+                    <button class="button-categoria-especifica">Panificadora</button>
+                    <button class="button-categoria-especifica">Frutas</button>
+                    <button class="button-categoria-especifica">Bebidas</button>
+                </div>
+                <p class="modal-body-p">Valor do produto</p>
+                <input type="number" id="modal-adicionar-produto-preco">
+                <p class="modal-body-p">Link da imagem</p>
+                <input type="text" id="modal-adicionar-produto-link-imagem">
+                <button id="modal-adicionar-produto-button-cadastrar">Cadastrar Produto</button>
+                
+            </div>
+            <!-- <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div> -->
+        </div>   
+    </div>
+
+    <div id="modalEditarProduto" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="closeEditar">&times;</button>
+                <h2>Edição de produto</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-body-p">Nome do produto</p>
+                <input type="text" id="modal-editar-produto-nome">
+                <p class="modal-body-p">Descrição</p>
+                <input type="text" id="modal-editar-produto-descricao">
+                <p class="modal-body-p">Categoria</p>
+                <div id="" class="modal-editar-produto-div-categorias">
+                    <button id="panificadora" class="button-categoria-especifica">Panificadora</button>
+                    <button id="frutas" class="button-categoria-especifica">Frutas</button>
+                    <button id="bebidas" class="button-categoria-especifica">Bebidas</button>
+                </div>
+                <p class="modal-body-p">Valor do produto</p>
+                <input type="number" id="modal-editar-produto-preco">
+                <p class="modal-body-p">Link da imagem</p>
+                <input type="text" id="modal-editar-produto-link-imagem">
+                <button class="modal-editar-produto-button-excluir">Excluir</button>
+                <button id="modal-editar-produto-button-salvar" class="">Salvar Alterações</button>
+                
+            </div>
+            <!-- <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div> -->
+        </div>   
+    </div>
+
+    <div id="modalExcluirProduto" class="modal">
+
+        <!-- Modal Excluir -->
+        <div class="modal-content modal-content-excluir">
+            <div class="modal-header">
+                <button class="closeExcluir">&times;</button>
+                <h2>Exclusão de produto</h2>
+            </div>
+            <div class="modal-body">
+                <p class="p-excluir-produto">Tem certeza que deseja excluir esse produto?</p>
+                
+                <div id="" class="modal-excluir-produto-div-buttons">
+                    <button id="excluir-sim" class="modal-excluir-button">Sim</button>
+                    <button id="excluir-nao" class="modal-excluir-button">Não</button>
+                </div>                
+                
+            </div>           
+        </div>   
+    </div>
+
+    <main class="dashboard-main">
+        <section class="main-filtros-adicionar-produto">
+            <div class="main-filtros">
+                <button id="todos">Todos</button>
+                <button id="panificadora">
+                    <img src="./src/img/Icon_bread.png" alt="">
+                    Panificadora
+                </button>
+                <button id="frutas">
+                    <img src="./src/img/Icon_fruits.png" alt="">
+                    Frutas
+                </button>
+                <button id="bebidas">
+                    <img src="./src/img/Icon_glass_of_wine.png" alt="">
+                    Bebidas
+                </button>
+            </div>
+            <button id="button-adicionar-produto">Adicionar novo produto</button>
+        </section>
+        <section class="section-lista-produtos">
+            <div class="div-lista-produtos-cabecalho">
+                <span class="dashboard-cabecalho-produto">Produto</span>
+                <span class="dashboard-cabecalho-categoria">Categoria</span>
+                <span class="dashboard-cabecalho-descricao">Descrição</span>
+                <span class="dashboard-cabecalho-acoes">Ações</span>
+            </div>
+            <div class="div-lista-produtos"></div>
+        </section>
+    </main>
+
+    <div id="notificaDashboard">Oba oba....</div>
+
+    <script type="module" src="./src/js/dashboard.js"></script>
+</body>
+
+</html>

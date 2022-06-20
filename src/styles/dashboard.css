@@ -1,0 +1,582 @@
+.dashboard-body{
+  margin: 0;
+  background: #F5F5F5;
+}
+
+.logo-kenzie-food:hover{
+  cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    padding-top: 5px;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow-y: scroll; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);     
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {      
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;   
+  }
+
+  .modal-content-excluir{
+    border-radius: 8px;
+  }
+  
+  /* Close Button */
+  .close, .closeEditar, .closeExcluir{
+    color: #FFF;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus,
+  .closeEditar:hover,
+  .closeEditar:focus,
+  .closeExcluir:hover,
+  .closeExcluir:focus
+  {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modal-header {
+    padding: 2px 16px;
+    background: #F8F9FA;
+    border-radius: 8px 8px 0px 0px; 
+}
+
+.modal-header h2{
+font-family: 'Poppins', sans-serif; 
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.modal-header button {
+  border: none;
+  background: #E9ECEF;
+  border-radius: 4px;
+  color: #868E96;
+  margin-top: 5px;
+}
+
+.p-excluir-produto{
+  color: #000;
+font-family: 'Poppins', sans-serif; 
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+.modal-excluir-produto-div-buttons{
+  text-align: center;
+}
+
+.modal-excluir-produto-div-buttons button{
+  border-radius: 32px;
+  border: none;
+  background: #F8F9FA;
+
+  font-family: 'Inter', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+padding: 16px 70px;
+margin: 5px;
+
+
+}
+
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+
+
+  .modal-body-p{
+    font-family: 'Inter', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: left;
+color: #212529;
+margin-bottom: 5px;
+  }
+
+  .modal-body input{
+    border-radius: 12px;
+    border: none;
+    height: 40px;
+    width: 95%;
+    background: #DEE2E6;
+    padding: 5px 5px; 
+
+    font-family: 'Inter', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+  }
+
+  .button-categoria-especifica{
+    border: none;
+    border-radius: 32px;
+    background: #F8F9FA;
+    padding: 11px 26px;
+  }
+
+  #modal-adicionar-produto-button-cadastrar{
+    background: #FF2253;
+    color: #FFF;
+    border-radius: 32px;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px 0;
+    
+    font-family: 'Inter', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+
+  }
+
+
+  .modal-editar-produto-button-excluir{
+    border-radius: 32px;
+    border: none;
+    background: #F8F9FA;
+    color: #868E96;
+    padding: 15px 15px;
+
+    font-family: 'Inter', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+
+margin-top: 15px;
+margin-bottom: 5px;
+  }
+
+  #modal-editar-produto-button-salvar{
+    border-radius: 32px;
+    border: none;
+    background: #FF2253;
+    color: #FFF;
+    padding: 15px 15px;
+
+    font-family: 'Inter', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+
+margin-top: 15px;
+margin-bottom: 5px;
+  }
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+
+  /* FIM MODAL */
+
+
+  /* ---------------------------------- */
+  /* Modal Notifica */
+
+  #notificaDashboard {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #notificaDashboard.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+  /* FIM Modal Notifica */
+
+
+ 
+
+  .button-editar-produto{
+      width: 38px;
+      height: 38px;
+      background-image: url("../img/editarCinza.png");
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+      background-position: 50% 45%;
+      border: none;
+      border-radius: 50%;
+  }
+
+  .button-excluir-produto{
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/excluirCinza.png");
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    border: none;
+    border-radius: 50%;
+}
+
+.acoes-produto button:hover{
+    filter:invert(30%)
+}
+
+.categoriaSelecionada{
+    background: #FF2253;
+    color: #FFF;
+}
+
+
+
+.dashboard-header{
+  box-shadow: 0px 0px 40px -20px #00000040;
+  padding: 12px;
+
+}
+
+.dashboard-kenzie{
+  font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.dashboard-food{
+  font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #FF2253;
+}
+
+.dashboard-input-pesquisa{
+  background: #E9ECEF;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  width: 97%;
+}
+
+.avatarUsuarioDashboard{
+  display: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.div-logout-dashboard{
+  display: none;  
+}
+
+.button-logout-dashboard{
+  border-radius: 32px;
+  background:  #F8F9FA;
+  border: none;
+  padding: 15px 30px;
+  margin-left: 5px;
+
+  font-family: 'Inter', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+.button-logout-dashboard:hover{
+  background: #FF2253;
+    color: #FFF;
+}
+
+.dashboard-main{
+    padding: 5px; 
+}
+
+.main-filtros-adicionar-produto button{
+  font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 32px;
+  height: 48px;
+  padding: 14px;
+}
+
+.main-filtros-adicionar-produto button:hover{
+  background: #FF2253;
+  color: #FFF;
+}
+
+.div-lista-produtos-cabecalho{
+  display: none;
+}
+
+/* PRODUTOS */
+.dashboard-article{
+  background: #FFF;
+  border: 1px solid #E9ECEF;
+  border-radius: 12px;
+  padding: 15px 20px;  
+  margin: 5px 0;
+}
+
+.div-imagem-nome-produto{
+  display: flex;
+  align-items: center;
+}
+
+
+.div-imagem-nome-produto img{
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.div-imagem-nome-produto h3{  
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 24px;
+  color: #212529;
+}
+
+.article-produto-categoria{
+  color:#868E96;
+  background: #F8F9FA;
+  border-radius: 8px;
+  border: none;
+  padding: 3px 15px;
+
+  font-family: 'Poppins', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.dashboard-descricao-produto{
+  font-family: 'Poppins', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #868E96;
+
+}
+
+
+
+
+
+@media (min-width:720px){
+  .dashboard-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .div-input-pesquisar-avatar-usuario{
+    display: flex;
+    align-items: center;
+  }
+
+  .avatarUsuarioDashboard{
+    display: inline;
+    margin-left: 10px;    
+  }
+
+  .dashboard-input-pesquisa{   
+    width: 310px;    
+  }
+
+  .dashboard-main{
+    padding: 5px 10%;
+  }
+
+  .main-filtros-adicionar-produto{
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-filtros{
+    display: flex;
+  }
+
+
+
+  .div-lista-produtos-cabecalho{
+    display: flex;    
+    margin: 15px;
+    width: 100%
+
+  }
+  .div-lista-produtos-cabecalho span{
+    color: #868E96;
+    font-family: 'Poppins', sans-serif; 
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;   
+
+  }
+
+  .dashboard-cabecalho-produto{
+    width: 35%;
+  }
+
+  .dashboard-cabecalho-categoria{
+    width: 10%;
+  }
+  
+  .dashboard-cabecalho-descricao{
+    width: 50%;
+  }
+
+  .dashboard-cabecalho-acoes{
+    width: 20%;
+  }
+ 
+
+.dashboard-article {
+  display: flex;
+  align-items: center;
+}
+
+.div-imagem-nome-produto {  
+  width: 33%;
+}
+
+.article-produto-categoria{
+  margin-right: 3%;
+}
+
+.dashboard-descricao-produto{
+ 
+  width: 48%;
+}
+
+.acoes-produto{
+  width: 18%;
+}
+
+  .modal {    
+    position: fixed;
+    overflow: auto;    
+    padding-top: 60px;
+  }
+}

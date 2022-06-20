@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1>Kenzie <span>Food</span></h1>
+        <input type="text" name="pesquisa" placeholder="Pesquisar por produto" id="campoBusca">
+        <button id="adminPage">Admin Page</button>
+        <button id="btn_Login">Login</button>
+    </header>
+    <nav>
+        <button class="todos" id="btn-Todos">Todos</button>
+        <button class="panificadora" id="btn-Panificadora"> <img src="src/img/Icon_bread.png" alt="panificadora">Panificadora</button>
+        <button class="frutas" id="btn-Frutas"> <img src="src/img/Icon_fruits.png" alt="frutas">Frutas</button>
+        <button class="bebidas" id="btn-Bebidas"><img src="src/img/Icon_glass_of_wine.png" alt="bebidas"> Bebidas</button>
+    </nav>
+    <section class="sectionProdutos">
+        <ul id="Lista_Produtos" class="listaDeProdutos">
+            
+        </ul>
+    </section>
+
+    <div class="carrinho" id="div_Carrinho">
+        <h2>Carrinho</h2>
+
+        <p id="carrinho_vazio">Por Enquanto não temos produtos no carrinho</p>
+
+        <p class="preco_total">Preço Total</p>
+        <!-- <p class="quantidade_produto">Quantidade de Produto</p> -->
+        <div class="produtos_Carrinho">
+
+        </div>
+    </div>
+    <script type="module" src="src/js/script.js"></script>
+</body>
+</html>

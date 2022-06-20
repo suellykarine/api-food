@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e9ecef;
+  border-radius: 12px;
+  width: 400px;
+  height: 600px;
+  margin-top: 120px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.entrar {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.cadastroUsuario {
+  margin-top: 30px;
+}
+
+.errorMsg {
+  margin-top: 40px;
+  color: red;
+}
+#kenzie {
+  cursor: pointer;
+}
+h1 {
+  color: #212529;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 33px;
+  margin-left: 18px;
+  margin-top: 30px;
+}
+h1 span {
+  color: #ff2253;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input {
+  width: 312px;
+  height: 49px;
+  border-radius: 12px;
+  border: 1.5px solid #e9ecef;
+  box-sizing: border-box;
+  padding: 15px 18px 15px 16px;
+  background: #fdfdfd;
+  margin-top: 25px;
+}
+
+button:active {
+  background: #ff2253;
+  color: #e9ecef;
+}
+
+button:hover {
+  background: #ff0037;
+}
+
+button {
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  border: 1.5px solid #f8f9fa;
+  border-radius: 30px;
+  margin: 60px 210px;
+  margin-bottom: 30px;
+  color: #f8f9fa;
+  width: 200px;
+  background: #ff2253;
+  font-size: 15px;
+}
+/* ANIMAÇÃO LOGIN */
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation: fadeIn 1s ease-in-out;
+  -moz-animation: fadeIn 1s ease-in-out;
+  -o-animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 480px) {
+  @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+  body {
+    background-color: #e9ecef;
+  }
+  main {
+    margin-top: 0px;
+  }
+}
