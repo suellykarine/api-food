@@ -1,9 +1,9 @@
 
 
-# Projeto em grupo
+# Projeto em grupo <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"  width="40" height="40"/>
 
 
-Implementação das requisições referentes a produtos e autenticações.
+Implementação das requisições referentes a produtos e autenticações. 
 Criação da página de login e register.
 
 Autenticação por meio do register e login
