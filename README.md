@@ -1,6 +1,6 @@
 
 
-# Projeto em grupo <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"  width="40" height="40"/>
+# Projeto em grupo <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40"/>
 
 
 Implementação das requisições referentes a produtos e autenticações. 
@@ -21,4 +21,4 @@ Link do projeto: https://api-kenziefood-m2-suellykarine.vercel.app/
 
 Link Api: https://gitlab.com/-/snippets/2274944
 
-ReactJs | JS | CSS
+JS | CSS | Html
